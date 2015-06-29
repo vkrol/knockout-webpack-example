@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Products</title>
+</head>
+<body>
+	<div id="root" style="display: none" data-bind="visible: true">
+		<p>Liked: <span data-bind="text: likedCount"></span></p>
+		<p>Disliked: <span data-bind="text: dislikedCount"></span></p>
+		<p>All: <span data-bind="text: products().length"></span></p>
+
+		<button data-bind="click: addProduct">Add a product</button>
+
+		<ul data-bind="foreach: products">
+			<li>
+				<strong data-bind="text: name"></strong>
+				<like-or-dislike params="value: userRating"></like-or-dislike>
+			</li>
+		</ul>
+	</div>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+	<script src="build/bundle.js"></script>
+</body>
+</html>
