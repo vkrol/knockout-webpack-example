@@ -15,8 +15,6 @@ class LikeWidgetViewModel {
   }
 }
 
-console.log(1);
-
 ko.components.register('like-or-dislike', {
   viewModel: LikeWidgetViewModel,
   template: likeOrDislikeHtml
