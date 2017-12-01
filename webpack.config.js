@@ -8,13 +8,13 @@ module.exports = {
 		loaders: [
 			{ test: /\.html$/, loader: 'html' },
 			{
-      	test: /\.js$/,
-      	exclude: /(node_modules|bower_components)/,
-      	loader: 'babel'
-    	}
+				test: /\.js$/,
+				exclude: /(node_modules|bower_components)/,
+				loader: 'babel'
+			}
 		]
 	},
 	externals: {
 		'ko': 'ko'
-  }
+	}
 };
