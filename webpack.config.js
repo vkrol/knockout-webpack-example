@@ -5,16 +5,8 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	module: {
-		loaders: [
-			{ test: /\.html$/, loader: 'html' },
-			{
-				test: /\.js$/,
-				exclude: /(node_modules|bower_components)/,
-				loader: 'babel'
-			}
+		rules: [
+			{ test: /\.html$/, loader: 'html-loader', }
 		]
-	},
-	externals: {
-		'ko': 'ko'
 	}
 };

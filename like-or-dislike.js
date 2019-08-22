@@ -1,4 +1,4 @@
-import ko from 'ko';
+import ko from 'knockout';
 import likeOrDislikeHtml from './like-or-dislike.html';
 
 class LikeWidgetViewModel {

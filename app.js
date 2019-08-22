@@ -1,4 +1,4 @@
-import ko from 'ko';
+import ko from 'knockout';
 import './like-or-dislike.js';
 
 class Product {
